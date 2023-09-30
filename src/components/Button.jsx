@@ -1,11 +1,11 @@
-function Button({buttonType = "button", buttonText, disabled, clickHandler}) {
+function Button({buttonType = "button", text, disabled}) {
     return (
         <>
             <button type={buttonType}
                     disabled={disabled}
-                    onClick={clickHandler}
+                    onClick={() => console.log(text)}
             >
-                {buttonText}
+                {text}
             </button>
         </>
     )

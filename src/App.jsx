@@ -10,27 +10,21 @@ import ourStory from "./assets/our_story.png";
 import Tile from "./components/Tile.jsx";
 
 function App() {
-    const logButtonText = (text) => {
-        console.log(text);
-    };
 
     return (
         <>
             <h1>Handbags & Purses</h1>
             <nav>
                 <Button
-                    buttonText="to the collection"
-                    clickHandler={() => logButtonText("to the collection")}
+                    text="to the collection"
                     disabled={false}
                 />
                 <Button
-                    buttonText="shop all bags"
-                    clickHandler={() => logButtonText("shop all bags")}
+                    text="shop all bags"
                     disabled={false}
                 />
                 <Button
-                    buttonText="pre-orders"
-                    clickHandler={() => logButtonText("pre-orders")}
+                    text="pre-orders"
                     disabled={true}
                 />
             </nav>
@@ -46,25 +40,25 @@ function App() {
                     isBestSeller="Best seller"
                     productImageUrl={bag1}
                     productTitle="The handy bag"
-                    productPrice="€400,"
+                    productPrice="400"
                 />
                 <ProductCard
                     isBestSeller="Best seller"
                     productImageUrl={bag2}
                     productTitle="The stylish bag"
-                    productPrice="€250,"
+                    productPrice="250"
                 />
                 <ProductCard
                     isBestSeller="New collection"
                     productImageUrl={bag3}
                     productTitle="The simple bag"
-                    productPrice="€300,"
+                    productPrice="300"
                 />
                 <ProductCard
                     isBestSeller="New collection"
                     productImageUrl={bag4}
                     productTitle="The trendy bag"
-                    productPrice="€150,"
+                    productPrice="150"
                 />
 
                 {/*<article>*/}

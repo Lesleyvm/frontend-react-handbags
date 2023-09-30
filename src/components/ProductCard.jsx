@@ -5,7 +5,7 @@ function ProductCard({isBestSeller, productTitle, productPrice, productImageUrl}
                 <span>{isBestSeller}</span>
                 <img src={productImageUrl}/>
                 <p>{productTitle}</p>
-                <h4>{productPrice}</h4>
+                <h4>€{productPrice},-</h4>
             </article>
         </>
     )
